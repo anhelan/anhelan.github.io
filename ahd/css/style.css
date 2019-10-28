@@ -359,7 +359,8 @@ h5 {
     top: 0;
     height: 100%;
     width: 33%;
-    background: rgba(38, 56, 89, 0.95);
+    background: rgba(23, 34, 59, 0.9);
+    border-left: 0px solid #FF6768;
     z-index: 2;
     text-align: center;
     padding: 50px 0;
@@ -375,6 +376,7 @@ h5 {
     transition-property: transform, -webkit-transform;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    transition-timing-function: ease;
     list-style: none;
 }
 
@@ -460,10 +462,16 @@ h5 {
     font-family: "Suez one";
     font-size: 40px;
     color: #FF6768;
+    margin: 0;
+}
+
+.box-intro .table-cell h2 strong {
+    font-size: 32px;
 }
 
 .box-intro img {
     width: 20vw;
+    padding-bottom: 20px;
 
 }
 
@@ -485,6 +493,8 @@ b i:last-child {
 
 .intro-cta {
     padding: 30px 0 0 0;
+    display: inline-flex;
+    margin: 10px;
 }
 
 .btn-box-cta {
@@ -496,7 +506,7 @@ b i:last-child {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .btn-box-cta:hover {
@@ -515,7 +525,7 @@ b i:last-child {
     left: 50%;
     margin-left: -12px;
     border-radius: 15px;
-    border: 2px solid transparent;
+    border: 2px solid #263859;
     -webkit-animation: intro 1s;
     animation: intro 1s;
 }
@@ -529,6 +539,19 @@ b i:last-child {
     background: #FF6768;
     -webkit-animation: finger 2s infinite;
     animation: finger 2s infinite;
+}
+
+.mouse:hover {
+    position: absolute;
+    width: 22px;
+    height: 42px;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -12px;
+    border-radius: 15px;
+    border: 2px solid #FF6768;
+    -webkit-animation: intro 1s;
+    animation: intro 1s;
 }
 
 @-webkit-keyframes intro {
@@ -586,6 +609,7 @@ b i:last-child {
     font-size: 24px;
     line-height: 1.0;
     letter-spacing: 1px;
+    padding-top: 20px;
 }
 
 .box-words-wrapper {
@@ -961,8 +985,8 @@ footer img {
 .top-bar {
     color: #FF6768;
     padding: 100px 0 100px;
-    background: linear-gradient( to top, rgba(23, 34, 59, 1) 70%,rgba(23, 34, 59, 0.5) 100%),url(../img/topbg2.png);
-    background-size: contain;
+    background: linear-gradient( to top, rgba(23, 34, 59, 1) 50%,rgba(23, 34, 59, 0) 100%),url(../img/topbg.png);
+    background-size: auto;
     background-attachment: fixed;
     background-position: top center;
     text-align: center;
@@ -1182,6 +1206,29 @@ textarea:focus {
     color: #FF6768;
 }
 
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(9, 20, 46, 0.85);
+}
+
+.lightbox img {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 5%;
+}
+
+.lightbox:target {
+	outline: none;
+	display: block;
+}
+
 
 /* Responsive media queries
 ==================================================*/
@@ -1208,6 +1255,10 @@ textarea:focus {
 
     .box-intro .table-cell h2 {
         font-size: 32px;
+    }
+
+    .box-primary-nav {
+        width: 50%;
     }
 }
 
@@ -1249,6 +1300,10 @@ textarea:focus {
         .box-intro img {
             width: 35vw;
         }
+
+        .box-primary-nav {
+            width: 100%;
+        }
 }
 
 @media only screen and (max-width: 520px) {
@@ -1273,5 +1328,9 @@ textarea:focus {
     .top-bar h1 {
         font-size: 30px;
         line-height: 30px;
+    }
+
+    .box-logo h3 {
+        display: none;
     }
 }
