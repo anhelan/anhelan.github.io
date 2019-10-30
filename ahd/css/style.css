@@ -28,7 +28,7 @@
 ==================================================*/
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
-@import	url(https://fonts.googleapis.com/css?family=Suez+One:400,500,600,700);
+@import	url(https://fonts.googleapis.com/css?family=Lobster:400,500,600,700);
 
 /* General
 ==================================================*/
@@ -40,6 +40,7 @@ body {
     line-height: 1.8;
     color: #fff;
     background-color: #17223B;
+    scroll-behavior: smooth;
 }
 
 .no-padding {
@@ -136,8 +137,8 @@ h5 {
 }
 
 .spinner {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     position: relative;
     margin: 100px auto;
 }
@@ -146,8 +147,9 @@ h5 {
 .double-bounce2 {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    background-color: #FF6768;
+    background-image: url("/ahd/img/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -239,12 +241,16 @@ h5 {
     padding: 20px;
 }
 
+.box-logo a {
+    display: inline-flex;
+}
+
 .box-logo h3 {
     display: block;
     font-size: 24px;
     color: #FF6768;
     padding: 3px 0 0 15px;
-    font-family: 'Suez one', sans-serif;
+    font-family: 'Lobster', sans-serif;
 }
 
 .box-logo img {
@@ -359,7 +365,7 @@ h5 {
     top: 0;
     height: 100%;
     width: 33%;
-    background: rgba(23, 34, 59, 0.9);
+    background: rgba(18, 27, 47, 0.9);
     border-left: 0px solid #FF6768;
     z-index: 2;
     text-align: center;
@@ -411,10 +417,17 @@ h5 {
 
 .box-primary-nav .box-label {
     color: #FF6768;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 2.4em 0 .8em;
+    font-family: "Lobster";
+}
+
+.box-primary-nav .box-label strong {
     text-transform: uppercase;
+    font-family: "Poppins";
     font-weight: 700;
     font-size: 17px;
-    margin: 2.4em 0 .8em;
 }
 
 .box-primary-nav .box-social {
@@ -459,20 +472,40 @@ h5 {
 }
 
 .box-intro .table-cell h2 {
-    font-family: "Suez one";
-    font-size: 40px;
+    font-family: "Lobster";
+    font-size: 48px;
     color: #FF6768;
     margin: 0;
 }
 
 .box-intro .table-cell h2 strong {
     font-size: 32px;
+    color: #fff;
+    font-weight: 400;
 }
 
 .box-intro img {
     width: 20vw;
     padding-bottom: 20px;
+    animation: float 4s ease-in-out 1s infinite alternate;
+    filter: hue-rotate(0deg);
+    transition: all 5s ease-in-out;
+}
 
+.box-intro img:hover {
+    width: 20vw;
+    padding-bottom: 20px;
+    animation: float 4s ease-in-out 1s infinite alternate;
+    filter: hue-rotate(360deg);
+}
+
+@keyframes float{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.025);
+  }
 }
 
 .box-intro em {
@@ -492,7 +525,6 @@ b i:last-child {
 }
 
 .intro-cta {
-    padding: 30px 0 0 0;
     display: inline-flex;
     margin: 10px;
 }
@@ -536,7 +568,7 @@ b i:last-child {
     height: 4px;
     margin: 6px auto;
     border-radius: 10px;
-    background: #FF6768;
+    background: #6B778D;
     -webkit-animation: finger 2s infinite;
     animation: finger 2s infinite;
 }
@@ -610,6 +642,7 @@ b i:last-child {
     line-height: 1.0;
     letter-spacing: 1px;
     padding-top: 20px;
+    margin: 0;
 }
 
 .box-words-wrapper {
@@ -1204,6 +1237,9 @@ textarea:focus {
 .cat-ul li i {
     margin-right: 10px;
     color: #FF6768;
+    font-size: 21px;
+    vertical-align: middle;
+    line-height: 26px;
 }
 
 .lightbox {
@@ -1215,13 +1251,13 @@ textarea:focus {
 	text-align: center;
 	top: 0;
 	left: 0;
-	background: rgba(9, 20, 46, 0.85);
+	background: rgba(18, 27, 47, 0.9);
 }
 
 .lightbox img {
 	max-width: 90%;
-	max-height: 80%;
-	margin-top: 5%;
+	max-height: 90%;
+	margin-top: 2.5%;
 }
 
 .lightbox:target {
@@ -1289,7 +1325,7 @@ textarea:focus {
 
     .box-logo img {
         height: 35px;
-        width: 100%;
+        width: auto;
     }
 
     .box-logo h3 {
