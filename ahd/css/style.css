@@ -1265,6 +1265,127 @@ textarea:focus {
 	display: block;
 }
 
+  .bargraph-bg {
+    background: #121B2F;
+    width:100%;
+    border-radius: 17.5px;
+  }
+
+ul.bargraph {
+    margin: 0 20%;
+    padding: 0;
+    }
+
+ul.bargraph li {
+    height: 35px;
+    color: #fff;
+    text-align: left;
+    font-weight:500;
+    font-size: 14px;
+    line-height: 35px;
+    padding: 0px 20px;
+    margin-bottom: 7px;
+    list-style: none;
+    border-radius: 17.5px;
+    background: #121B2F;
+    width: 100%;
+    }
+
+    ul.bargraph h3 {
+        text-align: center;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        }
+
+ul.bargraph li.mod {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #FF4079;
+width:86%;
+}
+
+ul.bargraph li.ren {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #FF4079;
+width:84%;
+}
+
+ul.bargraph li.ske {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #FF4079;
+width:72%;
+}
+
+ul.bargraph li.pro {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #FF4079;
+width:86%;
+}
+
+ul.bargraph li.pri {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #FF4079;
+width:86%;
+}
+
+ul.bargraph li.ill {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #31C5F0;
+width:86%;
+}
+
+ul.bargraph li.pho {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #31C5F0;
+width:72%;
+}
+
+ul.bargraph li.aft {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #31C5F0;
+width:86%;
+}
+
+ul.bargraph li.pre {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #31C5F0;
+width:57%;
+}
+
+ul.bargraph li.ind {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #31C5F0;
+width:72%;
+}
+
+ul.bargraph li.fig {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #31C5F0;
+width:100%;
+}
+
+ul.bargraph li.gra {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #31C5F0;
+width:86%;
+}
+
+ul.bargraph li.rhi {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #A259FF;
+width:72%;
+}
+
+ul.bargraph li.sol {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #A259FF;
+width:86%;
+}
+
+ul.bargraph li.aut {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #A259FF;
+width:55%;
+}
+
+ul.bargraph li.key {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #A259FF;
+width:86%;
+}
+
+ul.bargraph li.htm {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #00A88A;
+width:45%;
+}
+
+ul.bargraph li.jav {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 88.02%), #00A88A;
+width:20%;
+}
 
 /* Responsive media queries
 ==================================================*/
@@ -1296,6 +1417,11 @@ textarea:focus {
     .box-primary-nav {
         width: 50%;
     }
+
+    ul.bargraph {
+        margin: 0;
+        padding: 0;
+        }
 }
 
 @media only screen and (max-width: 670px) {
